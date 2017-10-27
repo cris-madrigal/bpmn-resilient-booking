@@ -1,7 +1,5 @@
 package com.camunda.demo.springboot.adapter;
 
-import java.util.UUID;
-
 import org.camunda.bpm.engine.ProcessEngine;
 import org.camunda.bpm.engine.runtime.ProcessInstance;
 import org.springframework.amqp.rabbit.annotation.Exchange;
@@ -12,8 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.camunda.demo.springboot.ProcessConstants;
 
 @Component
 @Profile("!test")
